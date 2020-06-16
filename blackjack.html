@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1"> Andrew E </span>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutMe.html"> About </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="productSlider.html"> Slider </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carlot.html"> Car Game </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="battleship.html"> Battleship </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blackjack.html"> Blackjack </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexOnHover.html"> onHover </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexOnClick.html"> onClick </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="stringTimes.html"> String </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product1.html"> product1 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product2.html"> product2 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="3dView.html"> 360 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="store.html"> Shopping Cart </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactForm.html"> Contact Form </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+      
+    <!-- Game UI Here -->
+        <div class="game">
+            <div class="game">
+                <h3>Black Jack</h3>
+
+            <div class="game-options">
+                <input type="button" name="start" id="btnStart" class="btn" value="Start" onclick="startblackjack()">
+                <input type="button" class="btn" value="hit me " onclick="hitMe()">
+                <input type="button" class="btn" value="stay" onclick="stay()">
+            </div>
+
+            <div class="status" id="status"></div>
+            
+            <div id="deck" class="deck">
+            <div id="deckcount">52</div>
+            </div>
+
+            <div id="players" class="players"></div>
+
+            <div class="clear"></div>
+        </div>
+
+        </div>
+    </div>
+    <!-- Game UI Above -->
+    <script src="main.js"></script>
+</body>
+</html>
