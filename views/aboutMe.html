@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/portfolioEbert/resources/css/styles.css">
 </head>
 <body>
   <nav class="navbar navbar-expand navbar-dark bg-dark">
@@ -58,49 +58,12 @@
   </nav>
 
     <!== Navbar Above -->
-    <button class="btn btn-outline-success" type="button" onClick="showRoomFloor(carLot)" > Click Me To Buy A Random Car</button>
-    <button class="btn btn-outline-info" onClick="window.location.reload();">I WANT A NEW CAR</button>
-    <h2 id="today"></h2>        
-    <script>
-        function makecar(){
-            var make = ["chevy", "GM", "Fiat", "Webv Motors", "Tucker"];
-            var models = ["Cadi", "500", "Bel-Air", "Taxi", "Torpedo"];
-            var years = [1955, 1957, 1948, 1954, 1961];
-            var colors = ["red", "blue", "tan", "yellow", "white"];
-            var convert = ["soft-top convertible", "hard-top convertible"];
-
-            var rand1 = Math.floor(Math.random() * make.length);
-            var rand2 = Math.floor(Math.random() * models.length);
-            var rand3 = Math.floor(Math.random() * years.length);
-            var rand4 = Math.floor(Math.random() * colors.length);
-            var rand5 = Math.floor(Math.random() * 5) +1;
-            var rand6 = Math.floor(Math.random() * 2);
-
-            var car = {
-                make: make[rand1],
-                model: models[rand2],
-                year: years[rand3],
-                colors: colors[rand4],
-                passengers: rand5,
-                convertible: convert[rand6],
-                mileage: 0,
-                drive: function(){
-                    alert("ZOom, zoOM");
-                }
-            }
-
-            return car;
-        }
-        function showRoomFloor(car){
-            document.getElementById("today").innerHTML = car.make + ": " + car.year + " " + car.model + " " + car.colors + " " + car.passengers + " " + " " + car.convertible + " with " + car.mileage + " miles";
-
-            car.drive()
-        }
-
-        var carLot = makecar();
-        //showRoomFloor(carLot);
-
-    </script>
     
+    <h1> This is the About Page </h1>
+
+    <p id="demo"></p>
+
+    <p> Thank you for visiting my page. My name is Andrew Ebert and although I was born by the Atlantic Ocean in the Northeast I am native to the American midwest. I have traveled much of the United States and a bit of Canada and Mexico. I have always wanted to travel more but had to commit the past decade to work and education where I was able to gain a bachelors and masters degrees. My work and education experience have allowed me to understand in great detail the processes behind marketing and all varieties of management including program, project, and product research, development, and delivery. In recent times I have also taken it upon myself to increase my technical experience in becoming a computer engineer utilizing stacks for JavaScript. I am very big on communication and as a result I have made many wonderful connections over the years. I wish to continue to make many more important connections and hope to eventually be able to travel for work. If you are a like minded individual and would like to find out how we can improve the business functions that we touch please reach out to me: andrewsebertii@gmail.com.  </p>
+
 </body>
 </html>

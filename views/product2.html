@@ -1,52 +1,14 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title> Image Guess </title>
-    <style>
-        body {
-            margin: 20px;
-        }
-
-        img {
-            margin: 20px;
-        }
-
-        /* added in second step */
-    </style>
-    <script>
-        window.onload = init;
-
-        function init() {
-            var images = document.getElementsByTagName("img");
-            for (var i = 0; i < images.length; i++) {
-                images[i].onmouseover = showAnswer;
-            }
-        };
-
-        function showAnswer(eventObj) {
-            var image = eventObj.target;
-            var name = image.id;
-            name = name + ".jpg";
-            image.src = name;
-            setTimeout(reblur, 2000, image.id);
-        }
-
-        function reblur(id) {
-            var image = document.getElementById(id);
-            var name = id + "/portfolioEbert/Images/oneblury.jpg";
-            image.src = name;
-
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEST 2</title>
+    <link rel="stylesheet" href="/portfolioEbert/resources/css/styles.css">
 </head>
-
 <body>
-    <img id="one" src="/portfolioEbert/Images/oneblury.jpg">
-    <img id="two" src="/portfolioEbert/Images/twoblury.jpg">
-    <img id="three" src="/portfolioEbert/Images/threeblury.jpg">
-    <img id="four" src="/portfolioEbert/Images/fourblury.jpg">
-    
+
     <nav class="navbar navbar-expand navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1"> Andrew E </span>
         <div class="collapse navbar-collapse">
@@ -96,7 +58,58 @@
           </ul>
         </div>
       </nav>
-
+      
+    <div class="shoesdesign">
+        <div class="nike">
+            <div class="logo">
+                <img src="/portfolioEbert/resources/Images/Nike.logo.png" alt="">
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="text">
+                <p><em>Just <br> Do <br> It</em></p>
+            </div>
+            <div class="nike-shoes">
+                <img src="/portfolioEbert/resources/Images/nike-shoes.png" alt="">
+            </div>
+            <div class="price">
+                <h3>$299</h3>
+                <h2>$99</h2>
+            </div>
+            <div class="button">
+                <a href="#">Add to Cart</a>
+            </div>
+            <p class="mens">Men Shoes</p>
+        </div>
+    </div>
+    <div class="shoesdesign2">
+        <div class="adidas">
+            <div class="adidaslogo">
+                <img src="/portfolioEbert/resources/Images/adidas-logo.png" alt="">
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="text2">
+                <p><em>Nothing is <br> Impossible</em></p>
+            </div>
+            <div class="adidas-shoes">
+                <img src="/portfolioEbert/resources/Images/adidas-shoes.png" alt="">
+            </div>
+            <div class="price2">
+                <h3>$299</h3>
+                <h2>$79</h2>
+            </div>
+            <div class="button2">
+                <a href="#">Add to Cart</a>
+            </div>
+            <p class="mens">Men Shoes</p>
+        </div>
+    </div>
 </body>
-
 </html>

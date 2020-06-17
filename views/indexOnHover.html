@@ -1,11 +1,53 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="main.js"></script>
+  <meta charset="utf-8">
+  <title> Image Guess </title>
+  <link rel="stylesheet" href="/portfolioEbert/resources/css/styles.css">
+  <style>
+    body {
+      margin: 20px;
+    }
+
+    img {
+      margin: 20px;
+    }
+
+    /* added in second step */
+  </style>
+  <script>
+    window.onload = init;
+
+    function init() {
+      var images = document.getElementsByTagName("img");
+      for (var i = 0; i < images.length; i++) {
+        images[i].onmouseover = showAnswer;
+      }
+    };
+
+    function showAnswer(eventObj) {
+      var image = eventObj.target;
+      var name = image.id;
+      name = name + ".jpg";
+      image.src = "/portfolioEbert/Images/" + name;
+      setTimeout(reblur, 2000, image.id);
+    }
+
+    function reblur(id) {
+      var image = document.getElementById(id);
+      var name = "/portfolioEbert/Images/" + id + "blury.jpg";
+      image.src = name;
+
+    }
+  </script>
 </head>
+
 <body>
+  <img id="one" src="/portfolioEbert/Images/oneblury.jpg">
+  <img id="two" src="/portfolioEbert/Images/twoblury.jpg">
+  <img id="three" src="/portfolioEbert/Images/threeblury.jpg">
+  <img id="four" src="/portfolioEbert/Images/fourblury.jpg">
+
   <nav class="navbar navbar-expand navbar-dark bg-dark">
     <span class="navbar-brand mb-0 h1"> Andrew E </span>
     <div class="collapse navbar-collapse">
@@ -56,19 +98,6 @@
     </div>
   </nav>
 
-    <h1>Contact me</h1>
-    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/andrewsebertii@gmail.com" method="post">
-        <label for="full-name">Name
-            <input  type="text" name="name" id="full-name" placeholder="First and Last" required class="name"/>
-        </label>
-        <label for="email">E-mail
-            <input type="email" name="email" id="email" placeholder="Email Address" required class="email" />
-        </label>       
-        <label> Message
-            <textarea type="text" name="message" id="message" placeholder="Enter a message here" required class="message"></textarea>
-        </label>
-        <div class="status"></div>
-        <button type="submit" class="submit"> Send </button>
-    </form>
 </body>
+
 </html>
