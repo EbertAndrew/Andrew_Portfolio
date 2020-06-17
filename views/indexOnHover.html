@@ -29,13 +29,13 @@
       var image = eventObj.target;
       var name = image.id;
       name = name + ".jpg";
-      image.src = "/portfolioEbert/Images/" + name;
+      image.src = "/portfolioEbert/resources/Images/" + name;
       setTimeout(reblur, 2000, image.id);
     }
 
     function reblur(id) {
       var image = document.getElementById(id);
-      var name = "/portfolioEbert/Images/" + id + "blury.jpg";
+      var name = "/portfolioEbert/resources/Images/" + id + "blury.jpg";
       image.src = name;
 
     }
@@ -43,18 +43,10 @@
 </head>
 
 <body>
-  <img id="one" src="/portfolioEbert/Images/oneblury.jpg">
-  <img id="two" src="/portfolioEbert/Images/twoblury.jpg">
-  <img id="three" src="/portfolioEbert/Images/threeblury.jpg">
-  <img id="four" src="/portfolioEbert/Images/fourblury.jpg">
-
   <nav class="navbar navbar-expand navbar-dark bg-dark">
     <span class="navbar-brand mb-0 h1"> Andrew E </span>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"> Home </a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="aboutMe.html"> About </a>
         </li>
@@ -86,7 +78,7 @@
           <a class="nav-link" href="product2.html"> product2 </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="3dView.html"> 360 </a>
+          <a class="nav-link" href="360deg.html"> 360 </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="store.html"> Shopping Cart </a>
@@ -98,6 +90,11 @@
     </div>
   </nav>
 
+
+  <img id="one" src="/portfolioEbert/resources/Images/oneblury.jpg">
+  <img id="two" src="/portfolioEbert/resources/Images/twoblury.jpg">
+  <img id="three" src="/portfolioEbert/resources/Images/threeblury.jpg">
+  <img id="four" src="/portfolioEbert/resources/Images/fourblury.jpg">
 </body>
 
 </html>
