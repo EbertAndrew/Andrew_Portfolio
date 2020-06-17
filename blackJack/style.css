@@ -1,0 +1,115 @@
+ /*!
+Blackjack
+ */
+
+ .game
+{
+width: 720px;
+border: solid 1px #ddd;
+margin: 0 auto;
+background: #18e29f;
+border: solid 10px;
+text-align:center;
+min-height:430px;
+}
+
+.btn{
+border:none;
+padding: 10px 30px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:rgb(12, 223, 124);
+}
+
+.game h3
+{
+padding: 10px;
+background:rgb(175, 44, 44);
+color:white;
+}
+
+.game .game-body
+{
+padding: 20px;
+}
+
+.game .game-options
+{
+text-align:center;
+}
+.game .card{
+width: 50px;
+height: 80px;
+padding: 10px;
+border: solid 1px #808080;
+background-color: white;
+display: inline-block;
+border-radius: 10px;
+font-size: 10pt;
+text-align: center;
+margin: 3px;
+border:solid 3px;
+}
+
+.game .status
+{
+display: inline-block;
+background: gold;
+border: solid 5px white;
+border-radius: 10px;
+padding: 5px 20px;
+margin: 0 auto;
+margin-top: 10px;
+display:none;
+}
+
+
+.players{
+width: 500px;
+margin: 0 auto;
+margin-top: 20px;
+text-align: center;
+color:rgb(170, 61, 97);
+}
+
+.player{
+width: 40%;
+border: solid 5px #c01616;
+border-radius: 10px;
+padding: 10px;
+display: inline-block;
+margin:1%;
+vertical-align: top;
+background:#ffffff;
+}
+
+.player.active{
+border: solid 5px rgb(8, 228, 56);
+}
+
+.points{
+text-align: center;
+font-size: 20pt;
+font-weight: bold;
+margin: 10px;
+color:rgb(255, 0, 200);
+}
+
+.deck{
+float:left;
+background: rgb(120, 4, 173);
+color:rgb(150, 116, 173);
+padding: 10px;
+border-radius:10px;
+border: double 5px;
+}
+
+.btn
+{
+background:rgb(134, 33, 33);
+color:white !important;
+border-radius:0px;
+}
