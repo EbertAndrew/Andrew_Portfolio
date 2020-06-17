@@ -1,73 +1,89 @@
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <title> Image Guess </title>
-    <link rel="stylesheet" href="/portfolioEbert/resources/css/styles.css">
-    <style>
-      body { margin: 20px; }
-      img { margin: 20px; }  /* added in second step */
-    </style>
-    <script>
-      window.onload = init;
-  
-      function init() {
-          var image = document.getElementById("zero");
-          image.onclick = showAnswer;
-      };
-  
-      function showAnswer() {
-          var image = document.getElementById("zero");
-          image.src = "/portfolioEbert/resources/Images/one.jpg";
-      }
-    </script>
-  </head>
-  <body>
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1"> Andrew E </span>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="aboutMe.html"> About </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="productSlider.html"> Slider </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="carlot.html"> Car Game </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="battleship.html"> Battleship </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blackjack.html"> Blackjack </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="indexOnHover.html"> onHover </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="indexOnClick.html"> onClick </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="stringTimes.html"> String </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="product1.html"> product1 </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="product2.html"> product2 </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="360deg.html"> 360 </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="store.html"> Shopping Cart </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactForm.html"> Contact Form </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-  
-      <img id="zero" src="/portfolioEbert/resources/Images/oneblury.jpg">
+<html lang="en">
 
-  </body></html>
+<head>
+  <meta charset="utf-8">
+  <title> Image Guess </title>
+  <link rel="stylesheet" href="../resources/css/styles.css">
+  <style>
+    body {
+      margin: 20px;
+    }
+
+    img {
+      margin: 20px;
+      height: 220px;
+      width: 268px;
+    }
+
+    /* added in second step */
+  </style>
+  <script>
+    window.onload = init;
+
+    function init() {
+      var image = document.getElementById("zero");
+      image.onclick = showAnswer;
+    };
+
+    function showAnswer() {
+      var image = document.getElementById("zero");
+      image.src = "../resources/Images/one.jpg";
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1"> Andrew E </span>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="aboutMe.html"> About </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="productSlider.html"> Slider </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carlot.html"> Car Game </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="battleship.html"> Battleship </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blackjack.html"> Blackjack </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexOnHover.html"> onHover </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexOnClick.html"> onClick </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="stringTimes.html"> String </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product1.html"> product1 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product2.html"> product2 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="360deg.html"> 360 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="store.html"> Shopping Cart </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactForm.html"> Contact Form </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+    <img id="zero" src="../resources/Images/oneblury.jpg">
+  </div>
+
+</body>
+
+</html>

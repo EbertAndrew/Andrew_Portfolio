@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Battleship</title>
-<link rel="stylesheet" href="/portfolioEbert/resources/css/battleShip.css">
-<link rel="stylesheet" href="/portfolioEbert/resources/css/styles.css">
+<link rel="stylesheet" href="../resources/css/battleShip.css">
+<link rel="stylesheet" href="../resources/css/styles.css">
 <style>
 body {
 	background-color: black;
@@ -14,7 +14,7 @@ div#board {
 	width: 1024px;
 	height: 863px;
 	margin: auto;
-	background: url("/portfolioEbert/resources/Images/board.jpg") no-repeat;
+	background: url("../resources/Images/board.jpg") no-repeat;
 }
 
 div#messageArea {
@@ -24,10 +24,10 @@ div#messageArea {
 	color: rgb(83, 175, 19);
 }
 .hit {
-	background: url("/portfolioEbert/resources/Images/ship.png") no-repeat center center;
+	background: url("../resources/Images/ship.png") no-repeat center center;
 }
 .miss {
-	background: url("/portfolioEbert/resources/Images/miss.png") no-repeat center center;
+	background: url("../resources/Images/miss.png") no-repeat center center;
 }
 table {
 	border-spacing: 0px; 
@@ -56,7 +56,7 @@ form input {
 </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
+  <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
     <span class="navbar-brand mb-0 h1"> Andrew E </span>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
@@ -140,7 +140,7 @@ form input {
 <input type="button" id="fireButton" value="Fire!">
 </form>
 </div>
-<script src="/portfolioEbert/resources/js/battleShip.js">
+<script src="../resources/js/battleShip.js">
 </script>
 </body>
 </html>

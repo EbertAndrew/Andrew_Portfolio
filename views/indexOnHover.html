@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title> Image Guess </title>
-  <link rel="stylesheet" href="/portfolioEbert/resources/css/styles.css">
+  <link rel="stylesheet" href="../resources/css/styles.css">
   <style>
     body {
       margin: 20px;
@@ -11,6 +11,8 @@
 
     img {
       margin: 20px;
+      height: 220px;
+      width: 220px;
     }
 
     /* added in second step */
@@ -29,13 +31,13 @@
       var image = eventObj.target;
       var name = image.id;
       name = name + ".jpg";
-      image.src = "/portfolioEbert/resources/Images/" + name;
+      image.src = "../resources/Images/" + name;
       setTimeout(reblur, 2000, image.id);
     }
 
     function reblur(id) {
       var image = document.getElementById(id);
-      var name = "/portfolioEbert/resources/Images/" + id + "blury.jpg";
+      var name = "../resources/Images/" + id + "blury.jpg";
       image.src = name;
 
     }
@@ -43,7 +45,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
+  <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
     <span class="navbar-brand mb-0 h1"> Andrew E </span>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
@@ -90,11 +92,20 @@
     </div>
   </nav>
 
-
-  <img id="one" src="/portfolioEbert/resources/Images/oneblury.jpg">
-  <img id="two" src="/portfolioEbert/resources/Images/twoblury.jpg">
-  <img id="three" src="/portfolioEbert/resources/Images/threeblury.jpg">
-  <img id="four" src="/portfolioEbert/resources/Images/fourblury.jpg">
+  <div class="container row">
+    <div class="col-md-3">
+      <img id="one" src="../resources/Images/oneblury.jpg">
+    </div>
+    <div class="col-md-3">
+      <img id="two" src="../resources/Images/twoblury.jpg">
+    </div>
+    <div class="col-md-3">
+      <img id="three" src="../resources/Images/threeblury.jpg">
+    </div>
+    <div class="col-md-3">
+      <img id="four" src="../resources/Images/fourblury.jpg">
+    </div>
+  </div>
 </body>
 
 </html>
