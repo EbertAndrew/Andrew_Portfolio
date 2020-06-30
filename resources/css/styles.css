@@ -5,9 +5,20 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-/*!
-Everything else
- */
+ /* ! XL =>1200px
+ @media (min-width:1200px){} 
+ 
+ /*! LG 992-1199px */
+ @media (min-width:992px) and (max-width:1199px) {} 
+ 
+ /*! MD 768-991px */
+ @media (min-width:768px) and (max-width:991px) {} 
+ 
+ /*! SM 576-767px */
+ @media (min-width:576px) and (max-width:767px) {} 
+ 
+ /*! XS (default) 0-575px */
+ @media (min-width:0px) and (max-width:575px) {}  */
 
  :root {
     --blue: #007bff;
